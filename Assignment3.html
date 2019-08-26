@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Assignment 1: CSIT 128
+        </title>
+        <link rel="stylesheet" href="A3.css">
+    </head>
+    <body>
+        <h1>--Question 1-- <br/><br/> </h1>
+        <div class="q1">
+        <h1><span style="color: #E9E9E9;">Full Name:</span> Quoc Duong Nguyen <span style="color: #E9E9E9;"> || Student Number:</span> 6562814</h1>
+        <h2>Subject Code:<span style="color: #E9E9E9;"> CSIT 128</span> || Subject Title:<span style="color: #E9E9E9;"> Introduction to Web Technology</span>  </h2>
+        <h3>Assignment Number: 03  || Subject due date: Saturday 31<sup>st</sup> August 2019</h3>
+        <h4>Computer lab time: Wednesday 8:30am - 10:30am</h4>
+
+        <p>
+            <b>I have read the policy for plagiarism at Wollongong University. I
+                declare that this assignment solution is entirely my work.
+            </b>
+        </p>
+
+        <p>
+            <i>I acknowledge that this assignment is scheduled to be marked in the
+                computer lab in Week 6 and Week 7, and absence from the labs may result in zero mark.
+            </i>
+        </p>
+        </div>
+        <hr/>
+        <!---End of Question 1--------------------------------->
+        <h1>--Question 2--</h1>
+
+        
+        <div class="q2">
+        <form action="https://www.uow.edu.au/about/contacts/" method="get">
+            <fieldset>
+                <legend>Search contact directory</legend>
+            <label id="findlabel">Find:</label><br/><br/>
+        <!--   <select name="searchfield" id="fielddd">
+                <option value="cn" >Full name</option>
+                <option value=sn selected>Last name</option>
+                <option value=givenName >First name</option>
+                <option value=description >Position</option>
+                <option value=ou >School/Unit</option>
+                <option value=physicalDeliveryOfficeName >Faculty/Division</option>
+                <option value=roomNumber >Physical location</option>
+                <option value=telephoneNumber >Telephone Number</option>
+            </select>--> 
+            <div class="radiofield">
+                <input type="radio" name="searchfield" value="cn" checked>Full Name&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="searchfield" value="sn">Last Name&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="searchfield" value="givenName">First Name&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="searchfield" value="description">Position&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="searchfield" value="ou">School/Unit&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="searchfield" value="physicalDeliveryOfficeName">Faculty/Division&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="searchfield" value="roomNumber">Physical location&nbsp;&nbsp;&nbsp;&nbsp;
+                <input type="radio" name="searchfield" value="telephoneNumber">Telephone Number&nbsp;&nbsp;&nbsp;&nbsp;
+            </div><br/><br/>
+        <!--
+            <select name="searchtype" id="typedd">
+                <option value="substring" selected>Contains</option>
+                <option value="exact" >Equals</option>
+                <option value="begin" >Begins with</option>
+                <option value="end" >Ends with</option>
+            </select>-->
+            <div class="radiotype">
+                    <input type="radio" name="searchtype" value="substring" checked>Contains&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <input type="radio" name="searchtype" value="exact">Equals&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <input type="radio" name="searchtype" value="begin">Begins with&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+                    <input type="radio" name="searchtype" value="end">Ends with&nbsp;&nbsp;&nbsp;&nbsp;
+            </div>
+            
+            <br/><br/>
+            <input name="searchstring" type="text" id="inputfield"><br/><br/>
+            <input name="submit" type="submit" value="Search" id="searchbut">
+            <input type="reset" id="rebut">
+        </fieldset>
+    </form>
+      </div>
+      <br/><br/><hr/>
+      <h1>--Question 3--</h1>
+      <br/>
+      <table style="width: 100%; border-width: 1px;"  width="100%" cellspacing="1" cellpadding="2">
+        <thead>
+            <tr>
+                <th  style="text-align: center;" width="50%">Activity</th>
+                <th  style="text-align: center;" width="50%">Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="odd">
+                <td style="text-align: left;">First day to enrol for re-enrolling (continuing students)</td>
+                <td style="text-align: left;">19 Nov 2018</td>
+            </tr>
+            <tr class="even">
+                <td style="text-align: left;">Last day to re-enrol</td>
+                <td style="text-align: left;">31 Jan 2019</td>
+            </tr>
+            <tr class="odd">
+                <td style="text-align: left;">International Enrolments</td>
+                <td style="text-align: left;"><p>21 - 22 Feb 2019</p> <p>Further information is available on <a href="/student/get-started/enrol/international/">Get Started</a></p></td>
+            </tr>
+            <tr class="even">
+                <td style="text-align: left;">Orientation</td>
+                <td style="text-align: left;">26 Feb - 28 Feb 2019</td>
+            </tr>
+            <tr class="odd">
+                <td style="text-align: left;">Lectures Commence (weeks 1-7)</td>
+                <td style="text-align: left;">04 Mar - 19 Apr 2019</td>
+            </tr>
+        </tbody>
+      </table>
+    <br/><br/><hr/>
+    <h1>--Question 4--</h1>
+    <div class="loginform">
+        <img src="bglogin.jpg" alt="imguni" width="100%" height="500px">
+        <div class="logo">
+            <img src="uowlogo.jpg" alt="uowlogo" width="600px" height="180px">
+        </div>
+        <div class="form">
+        <p id="title">Login To SOLS</p>
+        <form action="https://moodle.uowplatform.edu.au/login/index.php" method="POST" id="login">
+            <label>Username &nbsp;&nbsp;</label>
+            <input type="text" name="username" class="login"><br/><br/>
+            <label>Password &nbsp; &nbsp;</label>
+            <input type="password" name="password" class="login"><br/>
+            <input type="submit" value="Login" id="loginbutton">
+        
+        </form></div>
+    </div>
+
+    </body>
+</html>

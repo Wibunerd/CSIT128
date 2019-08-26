@@ -1,0 +1,150 @@
+div.q1{
+    background-color: #222930;
+    color: #4EB1BA;
+    text-align: center;
+    vertical-align: middle;
+    height: 300px;
+}
+
+div.q1 h3{
+    color: #F1684E;
+}
+
+legend{
+    font-size: 40px;
+    text-align: center;
+    color: #F1684E;
+}
+fieldset{
+    border: 1px solid red;
+    padding: 10px 10px 20px 20px;
+}
+
+#findlabel{
+    font-size: 30px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #0059ffc7;
+    line-height: 1.6;
+}
+
+div.radiofield{
+    background-color: #D3D3D3;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(128, 14, 235);
+    font-size: 22px;
+}
+
+div.radiotype{
+    background-color: #4EB1BA;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #222930;
+    font-size: 22px;
+}
+#inputfield{
+    width: 1200px;
+    height: 50px;
+    font-size: 20px;
+}
+
+#searchbut{
+    border: none;
+    background-color: blue;
+    color: white;
+    font-size: 30px;
+    
+}
+#searchbut:hover{
+    background-color: antiquewhite;
+    color: red;
+}
+
+#rebut{
+    border: none;
+    color: #5CDB95;
+    background-color: #222930;
+    font-size: 30px;
+}
+#rebut:hover{
+    background-color: #D3D3D3;
+    color: #4EB1BA;
+}
+
+table{
+    border: outset 5px;
+}
+
+thead{
+    background-color: #5CDB95;
+    color: #EDF5E1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+tr.odd td{
+    background-color: #E6EACA;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: blueviolet;
+}
+
+tr.even td{
+    background-color: #222930;
+    color: #4EB1BA;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div.loginform{
+    position: relative;
+}
+
+div.logo{
+    position: absolute; 
+    top: 0px;
+    left: 30%;
+}
+
+div.form{
+    position: absolute;
+    background-color: #D3D3D3;
+    top: 180px;
+    left: 30%;
+    width: 600px;
+    height: 320px;
+}
+#title{
+    position: relative;
+    left: 28%;
+    top:0%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    color: #F1684E;
+}
+
+#login{
+    position: relative;
+    top: 0%;
+    left: 26%;
+    color: rgba(243, 6, 6, 0.945);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    
+}
+
+.login{
+    height: 23px;
+    width: 200px;
+}
+#loginbutton{
+    position: absolute;
+    left: -20%;
+    border: none;
+    background-color: yellow;
+    color: royalblue;
+    font-size: 25px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#loginbutton:hover{
+    background-color: black;
+    color: red;
+}
+
+
