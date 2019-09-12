@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE student_list[
+    <!ELEMENT student_list (student*)>
+    <!ATTLIST student_list class CDATA #REQUIRED>
+    <!ELEMENT student (first_name, last_name, email, mobile)>
+    <!ATTLIST student id CDATA #REQUIRED>
+    <!ELEMENT first_name (#PCDATA)>
+    <!ELEMENT last_name (#PCDATA)>
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT mobile (#PCDATA)>
+]>
+<!-- <!ELEMENT elementName (child+)> child element can occur one or
+more times inside parent element
+<!ELEMENT elementName (child*)> child element can occur zero or
+more times inside parent element
+<!ELEMENT elementName (child?)> child element can occur zero or
+one time inside parent element
+<!ELEMENT elementName (child1|child2)> either of child1 or child2 must
+occur in inside parent element
+<!ELEMENT elementName (child1,child2,child3,...)> Parent element must have
+child1,child2,child3,...
+appear in this order-->
+<!-- <!ATTLIST elementName attributeName attributeType attributeValue>
+attributeValue
+● can have a default value
+<!ATTLIST elementName attributeName attributeType "default-value">
+● can have a fixed value
+<!ATTLIST elementName attributeName attributeType #FIXED "value">
+● is required
+<!ATTLIST elementName attributeName attributeType #REQUIRED>
+● is implied: if the attribute has no default value, has no fixed value, and is not
+required, then it must be declared as implied
+<!ATTLIST elementName attributeName attributeType #IMPLIED>-->
+
+<student_list class="CSIT128" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="LO601.xsd">
+    <student id="6561234">
+        <first_name>John</first_name>
+        <last_name>Smith</last_name>
+        <email>jsmith@gmail.com</email>
+        <mobile>0324278934</mobile>
+    </student>
+    <student id="6562814">
+        <first_name>Mike</first_name>
+        <last_name>Nguyen</last_name>
+        <email>miken2k1@outlook.com</email>
+        <mobile>0423110760</mobile>
+    </student>
+</student_list>

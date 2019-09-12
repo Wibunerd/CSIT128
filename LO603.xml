@@ -1,0 +1,6 @@
+<xml
+<scan schedule="hourly">
+    <start>2018-06-20T13:00:00</start>
+    <finish>2018-06-20T13:01:47</finish>
+    <virusFound>true</virusFound>
+</scan>

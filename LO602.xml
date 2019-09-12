@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE student_list SYSTEM "L602.dtd">
+<student_list class="CSIT128">
+    <student id="6561234">
+        <first_name>John</first_name>
+        <last_name>Smith</last_name>
+        <email>jsmith@gmail.com</email>
+        <mobile>0324278934</mobile>
+    </student>
+    <student id="6562814">
+        <first_name>Mike</first_name>
+        <last_name>Nguyen</last_name>
+        <email>miken2k1@outlook.com</email>
+        <mobile>0423110760</mobile>
+    </student>
+</student_list>

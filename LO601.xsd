@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+    <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:element name="student_list">
+        <xsd:complexType>
+            <xsd:sequence>
+                <xsd:element name="student" minOccurs="0" maxOccurs="unbounded">
+                    <xsd:complexType>
+                        <xsd:sequence>
+                            <xsd:element name="firstName" type="xsd:string"/>
+                            <xsd:element name="lastName" type="xsd:string"/>
+                            <xsd:element name="email" type="xsd:string"/>
+                        </xsd:sequence>
+                        <xsd:attribute name="id" type="xsd:integer"/>
+                    </xsd:complexType>
+                </xsd:element>
+            </xsd:sequence>
+            <xsd:attribute name="class" type="xsd:string"/>
+        </xsd:complexType>
+    </xsd:element>
+    </xsd:schema>

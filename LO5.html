@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+
+        </title>
+    </head>
+    <body>
+        First name:<input type="text" id="firstname"><br/>
+        Last name:<input type="text" id="lastname"><br/>
+        <button onclick="sayHi()">Say Hi</button>
+        <button onClick="clearPage()">Clear</button>
+        <br/>
+        <span id="greeting"></span><br><br>
+        <input type="text" id="firstnum">
+        <select id="operators">
+            <option value="plus">+</option>
+            <option value="minus">-</option>
+            <option value="multiple">x</option>
+        </select>
+        <input type="text" id="secondnum">
+        <button onclick="showResult()">=</button>
+        <input type="text" id="result">
+        <br/><br/>
+        <button onclick="rollDice()">Roll Dice</button>
+        <img id="rollpic" width="130px" height="130px">
+        <br><br>
+        <button onclick="showClock()">Clock</button>
+        <span id="clockdisplay"></span><br><br>
+        <!--
+        <button onClick="addSubject()">Click here to add subject</button>
+        <div id="subjectList"></div>
+-->
+        <button onClick="addSubject()">Click here to add subject</button>
+        <ul id="subjectList"></ul><br><br><hr><br><br>
+
+        <button onClick="startCounterAnimation()">Start counter</button>
+        <button onClick="stopCounterAnimation()">Stop counter</button>
+                <br /><br />
+        <font size="7">
+        <span id="counter"></span>
+        </font>
+
+        <script type="text/javascript" src="LO5.js"></script>
+    </body>
+</html>

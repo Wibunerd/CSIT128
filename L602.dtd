@@ -1,0 +1,8 @@
+<!ELEMENT student_list (student*)>
+<!ATTLIST student_list class CDATA #REQUIRED>
+    <!ELEMENT student (first_name, last_name, email, mobile)>
+    <!ATTLIST student id CDATA #REQUIRED>
+        <!ELEMENT first_name (#PCDATA)>
+        <!ELEMENT last_name (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ELEMENT mobile (#PCDATA)>

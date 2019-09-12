@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <p>--Question 1--</p>
+        <button onclick="document.getElementById('name').innerHTML = 'Student ID: 6562814  || Full Name: Quoc Duong Nguyen';">Show</button>
+        <button onclick="document.getElementById('name').innerHTML = '';">Hide</button>
+        <button onclick="alert('Student ID: 6562814  || Full Name: Quoc Duong Nguyen');">Alert</button>
+        <button onclick="console.log('Student ID: 6562814  || Full Name: Quoc Duong Nguyen');">Console</button>
+        <div>
+            <p id="name"></p>
+        </div>
+        <br/>
+        <button onclick="document.getElementById('subject').innerHTML = 'Subject Code: CSIT128 || Subject Name: Introduction to Web Technology';">Show</button>
+        <button onclick="document.getElementById('subject').innerHTML = '';">Hide</button>
+        <button onclick="alert('Subject Code: CSIT128 || Subject Name: Introduction to Web Technology');">Alert</button>
+        <button onclick="console.log('Subject Code: CSIT128 || Subject Name: Introduction to Web Technology');">Console</button>
+        <div>
+            <p id="subject"></p>
+        </div>
+        <br/>
+        <button onclick="document.getElementById('assignment').innerHTML = 'Assignment 4 || Due date: 14 September 2019';">Show</button>
+        <button onclick="document.getElementById('assignment').innerHTML = '';">Hide</button>
+        <button onclick="alert('Assignment 4 || Due date: 14 September 2019');">Alert</button>
+        <button onclick="console.log('Assignment 4 || Due date: 14 September 2019');">Console</button>
+        <div>
+            <p id="assignment"></p>
+        </div>
+        <br/>
+        <button onclick="document.getElementById('lab').innerHTML = 'Lab time: 8:30-10:30 Wednesday'">Show</button>
+        <button onclick="document.getElementById('lab').innerHTML = '';">Hide</button>
+        <button onclick="alert('Lab time: 8:30-10:30 Wednesday');">Alert</button>
+        <button onclick="console.log('Lab time: 8:30-10:30 Wednesday');">Console</button>
+        <div>
+            <p id="lab"></p>
+        </div>
+        <br/><hr/>
+        <p>-- Question 2 --</p>
+        <p id="upper"> I have read the policy for plagiarism at Wollongong University. I declare
+                that this assignment solution is entirely my work.</p>
+        <button onclick="change_para();">Switch Paragraphs</button>
+        <p id="lower">I acknowledge that this assignment is scheduled to be marked in the
+                computer lab in Week 8 and Week 9, and absence from the labs may result in zero mark.</p>
+        
+        <br/><br/><hr/>
+        <p>-- Question 3 --</p>
+        <button onclick="display('cat');">Cat</button>
+        <button onclick="display('dog');">Dog</button>
+        <button onclick="display('frog');">Frog</button><br/>
+        <div>
+            <textarea id="txtfield" cols="30" rows="3"></textarea>
+            <p id="msg"></p>
+            <img id="image" height="250px" width="300px">
+        </div>
+        <br/><hr/>
+        <p>-- Question 4 --</p>
+        <button onclick="increase_hour();">Hour</button>
+        <font size="7">
+            <span id="hrs">0</span>:<span id="min">0</span>
+        </font>
+        <button onclick="increase_minute();">Minute</button>
+
+        <br/><br/><hr/>
+        <p>-- Question 5 --</p><br/>
+        <img src="cat.jpg" id="pos0" height="250px" width="300px" onclick="cat_talk_org(); hop_new();">
+        <img src="doggo.jpg" id="pos1" height="250px" width="300px" onclick="dog_talk_org(); cat_talk_new();">
+        <img src="frog.jpg" id="pos2" height="250px" width="300px" onclick="dog_talk_new();hop_org(); ">
+
+    <script type="text/javascript" src="A4.js"></script>
+    </body>
+</html>
