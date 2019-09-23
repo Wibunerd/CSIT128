@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <p>--Question 1--</p>
+        <p id="perinfo">Name: Quoc Duong Nguyen | Student number: 6562814 | Lab time: 8:30-10:30am Wednesday | Assignment number: 5 | Assignment due: 21/09/2019</p>
+        <button onclick="change();">Turn on color</button><button onclick="off();">Turn off color</button>
+        <p id="policy">I have read the policy for plagiarism at Wollongong University. I declare that
+            this assignment solution is entirely my work. I acknowledge that this assignment is scheduled to
+            be marked in the computer lab in Week 9 and Week 10, and absence from the labs may result in
+            zero mark.</p>
+        
+        <br/><br/><hr>
+        <p>--Question 2--</p>
+        <form>
+            <p>Enter number of adult tickets</p>
+            <input type="text" id="adult"><br/>
+            <p>Enter the number of children tickets</p>
+            <input type="text" id="kids"><br/>
+        </form>
+        <button onclick="calculate();">Calculate total cost</button>
+        <br/><br/><hr>
+        <p>--Question 3--</p>
+        <form>
+        <span>Enter an integer from 1 to 9: </span>
+        <input type="text" id="userinput">
+        <button onclick="return timestable();">Generate times table</button><br/>
+        <div style="display:inline-block;width: 100%">
+            <div id="timeslist" style="float:left;width:30%">
+                <br/>
+            </div>
+         
+            <div style="float:right;width:70%">
+                <ul id="timesul"></ul>
+            </div>
+        </div>    
+        </form>
+        <br/><br/><hr>
+        <p>--Question 4--</p><br/>
+        <span>Enter an integer from 1 to 9: </span>
+        <input type="text" id="usin">
+        <button onclick="return startAni();">Start Animation</button>&nbsp;
+        <button onclick="return stopAni();">Stop Animation</button>
+        <div id="timesani"><br/></div>
+
+        <br><br/><hr>
+        <p>--Question 5--</p><br/>
+        <button onclick="return startGame();">Start Game</button>&nbsp;
+        <button onclick="return stopGame();">Stop Game</button><br/>
+        <div id="game">
+            <br/>
+            <font id="firsttwoline" style="font-size:200%;">
+
+            </font>
+            <font style="font-size:300%;">
+                <span id="firstnum" style="color:red;" onclick="checkNum(firNum);"></span>&nbsp;
+                <span id="secondnum" style="color:orange;"onclick="checkNum(secNum);"></span>&nbsp;
+                <span id="thirdnum" style="color:blue;"onclick="checkNum(thiNum);"></span>&nbsp;
+                <span id="fourthnum" style="color:purple;"onclick="checkNum(forNum);"></span><br/>
+            </font>
+
+        </div>
+<!---------------------------------------------------------------------------------------------------->
+
+
+    <script>
+    function change(){
+        document.getElementById("perinfo").style.color ="purple";
+        document.getElementById("policy").style.color = "orange";
+    }
+    
+    function off(){
+        document.getElementById("perinfo").style.color ="black";
+        document.getElementById("policy").style.color = "black";
+    }
+    //Question 2
+    function calculate(){
+        var adult_ticket = Number(document.getElementById("adult").value);
+        var kids_ticket = Number(document.getElementById("kids").value);
+        var result = adult_ticket*50 + kids_ticket*20;
+        alert("The total cost is $"+ result);
+    }
+    //Question 3
+    function timestable(){
+        var num = Number(document.getElementById("userinput").value);
+        if (num!=null){
+            for(var i = 1; i<=9; i++){
+                var line = document.createElement("span");
+                var br = document.createElement('br');
+                var timeText = document.createTextNode(num+" x "+i + " = "+ (num*i));
+                var liText = document.createTextNode(num+" x "+i + " = "+ (num*i)+"\n");
+                line.appendChild(timeText);
+                document.getElementById("timeslist").appendChild(line);
+                document.getElementById("timeslist").appendChild(br);
+                var li = document.createElement("li");
+                li.appendChild(liText);
+                document.getElementById("timesul").appendChild(li);
+            }
+        }
+        return false;
+        
+    }
+    //Question 4
+    var counter=1;
+    var q4Interval;
+    function displayAni(){
+        var num = Number(document.getElementById("usin").value);
+        var line = document.createElement("span");
+        var br = document.createElement('br');
+        var timeText = document.createTextNode(num+" x "+counter + " = "+ (num*counter));
+        line.appendChild(timeText);
+        document.getElementById("timesani").appendChild(line);
+        document.getElementById("timesani").appendChild(br);
+        counter++;
+        if(counter==10){
+            counter = 1;
+        }
+    }
+    function startAni(){
+        q4Interval=setInterval(displayAni, 1000);
+        return false;
+    }
+
+    function stopAni(){
+        clearInterval(q4Interval);
+        return false;
+    }
+    /*QUESTION 5 HERE*/
+    var attempt = 0;
+    var score = 0;
+    var chosenNum;
+    var q5Interval;
+    var firNum;
+    var secNum;
+    var thiNum;
+    var forNum;
+
+    function runGame(num){
+        if(attempt>1){
+            document.getElementById("numChosen").innerHTML = num;
+            document.getElementById("score").innerHTML = score;
+            return 0;
+        }
+        /*first line*/
+        var spanTxtFirstLine = document.createElement("span");
+        var spanNumFirstLine = document.createElement("span");
+        spanNumFirstLine.style.color = "green";
+        spanNumFirstLine.id = "numChosen";
+        var firstLineTxt = document.createTextNode("Your chosen number is: ")
+        var firstLineNum = document.createTextNode(num);
+        spanTxtFirstLine.appendChild(firstLineTxt);
+        document.getElementById("firsttwoline").appendChild(spanTxtFirstLine);
+        spanNumFirstLine.appendChild(firstLineNum);
+        document.getElementById("firsttwoline").appendChild(spanNumFirstLine);
+        document.getElementById("firsttwoline").appendChild(document.createElement('br'));
+        
+        /*second line*/
+        var spanTxtSecLine = document.createElement("span");
+        var spanNumSecLine = document.createElement("span");
+        spanNumSecLine.style.color = "red";
+        spanNumSecLine.id = "score";
+        
+        var secLineTxt = document.createTextNode("Your score so far: ")
+        var secLineNum = document.createTextNode(score);
+        spanTxtSecLine.appendChild(secLineTxt);
+        document.getElementById("firsttwoline").appendChild(spanTxtSecLine);
+        spanNumSecLine.appendChild(secLineNum);
+        document.getElementById("firsttwoline").appendChild(spanNumSecLine);
+        document.getElementById("firsttwoline").appendChild(document.createElement('br'));
+    }
+
+    function displayNum(){
+        firNum = Math.floor(Math.random() * 9);
+        secNum = Math.floor(Math.random() * 9);
+        thiNum = Math.floor(Math.random() * 9);
+        forNum = Math.floor(Math.random() * 9);
+        
+        document.getElementById("firstnum").innerHTML = firNum;
+        
+        document.getElementById("secondnum").innerHTML = secNum;
+        
+        document.getElementById("thirdnum").innerHTML = thiNum;
+        
+        document.getElementById("fourthnum").innerHTML = forNum;
+
+        document.getElementById("score").innerHTML = score;
+    }
+
+    function checkNum(num){
+        if(num == chosenNum){
+            score++;
+        }else{
+            score--;
+        }
+    }
+
+    function startGame(){
+        attempt++;
+        chosenNum = Number(prompt("Choose a number from 0 to 9"));
+        var newGame = runGame(chosenNum);
+        q5Interval = setInterval(displayNum, 1000);
+        return false;
+    }
+
+    function stopGame(){
+        clearInterval(q5Interval);
+        score = 0;
+
+    }
+    
+    </script>
+    </body>
+</html>

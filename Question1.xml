@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?xml-stylesheet type="text/xsl" href="Question2.xsl"?>
+<!DOCTYPE patron[
+    <!ELEMENT patron (name,item*)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT item (title,authors,number,due)>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT authors (#PCDATA)>
+    <!ELEMENT number (#PCDATA)>
+    <!ELEMENT due (#PCDATA)>
+    <!ATTLIST due overdue CDATA #REQUIRED>
+]>
+<patron>
+    <name>John Smith</name>
+    <item>
+        <title>Wireless Network Security</title>
+        <authors>T. Wrightson</authors>
+        <number>212.12/56</number>
+        <due overdue="no">26-12-2016</due>
+    </item>
+    <item>
+        <title>Analysis</title>
+        <authors>T. Tao</authors>
+        <number>515/305</number>
+        <due overdue="no">23-12-2016</due>
+    </item>
+    <item>
+        <title>The art of computer programming</title>
+        <authors>D.E. Knuth</authors>
+        <number>005.1/300</number>
+        <due overdue="yes">25-11-2016</due>
+    </item>
+    <item>
+        <title>Python for dummies</title>
+        <authors>S. Maruch and A. Ranum</authors>
+        <number>145.3/57</number>
+        <due overdue="yes">01-10-2016</due>
+    </item>
+</patron>
+
