@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-=======
-<?xml version="1.0" encoding="UTF-8"?>
-<?xml-stylesheet type="text/xsl" href="Question2.xsl"?>
->>>>>>> Nothing
+<?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE patron[
     <!ELEMENT patron (name,item*)>
     <!ELEMENT name (#PCDATA)>
