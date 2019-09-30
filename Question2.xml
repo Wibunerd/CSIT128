@@ -4,11 +4,11 @@
     <!ELEMENT patron (name,item*)>
     <!ELEMENT name (#PCDATA)>
     <!ELEMENT item (title,authors,number,due)>
+    <!ATTLIST item overdue CDATA #REQUIRED>
     <!ELEMENT title (#PCDATA)>
     <!ELEMENT authors (#PCDATA)>
     <!ELEMENT number (#PCDATA)>
     <!ELEMENT due (#PCDATA)>
-    <!ATTLIST due overdue CDATA #REQUIRED>
 ]>
 <patron>
     <name>John Smith</name>
