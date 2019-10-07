@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<timetable>
+    <destination>Wollongong - Kiama</destination>
+    <depart>5 mins</depart>
+    <train>
+        <time>08:54</time>
+        <from>Wollongong Station</from>
+        <platform>2</platform>
+    </train>
+    <train>
+        <time>08:56</time>
+        <from>Coniston Station</from>
+        <platform>2</platform>
+    </train>
+    <train>
+        <time>09:01</time>
+        <from>Unanderra Station</from>
+        <platform>1</platform>
+    </train>
+    <train>
+        <time>09:07</time>
+        <from>Dapto Station</from>
+        <platform>2</platform>
+    </train>
+    <train>
+        <time>09:15</time>
+        <from>Albion Park Station</from>
+        <platform>2</platform>
+    </train>
+    <train>
+        <time>09:21</time>
+        <from>Oaks Flat Station</from>
+        <platform>1</platform>
+    </train>
+    <train>
+        <time>09:25</time>
+        <from>Shellharbour Junction</from>
+        <platform>2</platform>
+    </train>
+    <train>
+        <time>09:29</time>
+        <from>Minnamurra Station</from>
+        <platform>1</platform>
+    </train>
+    <train>
+        <time>09:34</time>
+        <from>Bombo Station</from>
+        <platform>1</platform>
+    </train>
+    <train>
+        <time>09:38</time>
+        <from>Kiama Station</from>
+        <platform>2</platform>
+    </train>
+</timetable>
